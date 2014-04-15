@@ -1,0 +1,10 @@
+Docker run command generator
+==========================
+
+Pass in a JSON file like so:
+
+    cat example.json | docker run -i -a stdin -a stdout tinco/run-command
+
+And get a run command back like this one:
+
+    docker run -d -v /a/path:/some/mount my/container
