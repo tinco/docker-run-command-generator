@@ -1,3 +1,4 @@
+# VERSION 0.1
 FROM phusion/passenger-ruby21
 MAINTAINER Tinco Andringa "tinco@phusion.nl"
 ADD generate-run-command /sbin/
