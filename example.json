@@ -1,6 +1,10 @@
 {
-	"name" : "my/container",
 	"mounts" : {
-		"/some/mount" : "/a/path"
+		"/some/mount" : "/a/path",
+		"/some_other/mount" : "/another/path"
+	},
+	"environment_variables" : {
+		"SOME_VARIABLE" : "some/value",
+		"SOME_OTHER_VARIABLE" : "some/other/value"
 	}
 }
