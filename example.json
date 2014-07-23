@@ -1,5 +1,4 @@
 {
-	"name" : "my/container",
 	"mounts" : {
 		"/some/mount" : "/a/path"
 	}
