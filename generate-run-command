@@ -4,5 +4,6 @@ config = JSON.parse STDIN.read()
 
 name = config["name"]
 mounts = config["mounts"].map{|target,dir| "-v #{dir}:#{target}" }.join(' ')
-command = "docker run -d #{mounts} #{name}"
+environment_variables = config["environment_variables"].map{|name,value| "-e #{name}:#{value}" }.join(' ')
+command = "docker run -d #{mounts} #{environment_variables}"
 puts command

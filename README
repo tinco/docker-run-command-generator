@@ -3,8 +3,8 @@ Docker run command generator
 
 Pass in a JSON file like so:
 
-    cat example.json | docker run -i -a stdin -a stdout tinco/run-command
+    cat example.json | docker run -i -a stdin -a stdout tinco/run-command-generator
 
 And get a run command back like this one:
 
-    docker run -d -v /a/path:/some/mount my/container
+    docker run -d -v /a/path:/some/mount -v /another/path:/some_other/mount -e SOME_VARIABLE:some/value -e SOME_OTHER_VARIABLE:some/other/value
